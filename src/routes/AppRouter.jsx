@@ -23,7 +23,7 @@ const AppRouter = () => {
 					component={CharacterScreen}
 				/>
 
-				<Redirect to='/login' />
+				<Redirect to='/mans' />
 			</Switch>
 		</>
 	);
