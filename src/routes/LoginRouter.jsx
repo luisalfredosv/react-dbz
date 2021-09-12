@@ -11,15 +11,12 @@ const LoginRouter = () => {
 
 	return (
 		<Router>
-			{/* <AppRouter /> */}
-			{/* <Route exact path='/login' component={LoginScreen} /> */}
 			<Switch>
 				<PublicRouter
 					path='/login'
 					auth={log}
 					component={LoginScreen}
 				/>
-
 				<PrivateRouter path='/' auth={log} component={AppRouter} />
 			</Switch>
 		</Router>
